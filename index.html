@@ -50,6 +50,7 @@ div.tab button.active {
 <h1>My ECS Github Web Page</h1>
 
 <div class="tab">
+  <button class="tablinks" onclick="openAvenger(event, 'Home')">Home</button>
   <button class="tablinks" onclick="openAvenger(event, 'Iron Man')">Iron Man</button>
   <button class="tablinks" onclick="openAvenger(event, 'Captain America')">Captain America</button>
   <button class="tablinks" onclick="openAvenger(event, 'Thor')">Thor</button>
@@ -57,6 +58,11 @@ div.tab button.active {
   <button class="tablinks" onclick="openAvenger(event, 'Black Widow')">Black Widow</button>
 </div>
 
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+    <p>Welcome to my ECS Site.</p>
+</div>
+    
 <div id="Iron Man" class="tabcontent">
   <h3>Iron Man</h3>
   <p>Iron Man is the genius inventor and billionaire Tony Stark. </p>
