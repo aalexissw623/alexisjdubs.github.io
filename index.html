@@ -31,8 +31,8 @@ body {font-family: "Lato", sans-serif;}
 #Home {background-color:red;}
 #Food {background-color:green;}
 #Drink {background-color:pink;}
+#Desserts {background-color:dodgerBlue;}
 #News {background-color:purple;}
-#Locations {background-color:dodgerBlue;}
 </style>
 </head>
 <body>
@@ -44,27 +44,28 @@ body {font-family: "Lato", sans-serif;}
 
 <div id="Food" class="tabcontent">
   <h1>Food</h1>
+  <p>50 Restaurants You Need to Eat At Before You Die</p>
 </div>
 
 <div id="Drink" class="tabcontent">
   <h1>Drink</h1>
 </div>
 
+<div id="Desserts" class="tabcontent">
+  <h1>Desserts</h1>
+  <p>Latest.</p>
+</div>
+    
 <div id="News" class="tabcontent">
   <h1>Latest News</h1>
   <p>Latest.</p>
 </div>
 
-<div id="Locations" class="tabcontent">
-  <h1>Locations</h1>
-  <p>OK</p>
-</div>
-
 <button class="tablink" onclick="openTab('Home', this, 'red')" id="defaultOpen">Home</button>
 <button class="tablink" onclick="openTab('Food', this, 'green')">Food</button>
 <button class="tablink" onclick="openTab('Drink', this, 'pink')">Drink</button>
+<button class="tablink" onclick="openTab('Desserts', this, 'dodgerBlue')">Locations</button>
 <button class="tablink" onclick="openTab('News', this, 'purple')">News</button>
-<button class="tablink" onclick="openTab('Locations', this, 'dodgerBlue')">Locations</button>
 
 <script>
 function openTab(cityName,elmnt,color) {
