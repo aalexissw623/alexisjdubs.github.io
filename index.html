@@ -64,11 +64,11 @@ body {font-family: "Lato", sans-serif;}
 <button class="tablink" onclick="openTab('Home', this, 'red')" id="defaultOpen">Home</button>
 <button class="tablink" onclick="openTab('Food', this, 'green')">Food</button>
 <button class="tablink" onclick="openTab('Drink', this, 'pink')">Drink</button>
-<button class="tablink" onclick="openTab('Desserts', this, 'dodgerBlue')">Locations</button>
+<button class="tablink" onclick="openTab('Desserts', this, 'dodgerBlue')">Desserts</button>
 <button class="tablink" onclick="openTab('News', this, 'purple')">News</button>
 
 <script>
-function openTab(cityName,elmnt,color) {
+function openTab(tabName,elmnt,color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -78,7 +78,7 @@ function openTab(cityName,elmnt,color) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     elmnt.style.backgroundColor = color;
 
 }
