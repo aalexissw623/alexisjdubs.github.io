@@ -1,1 +1,91 @@
-FOOD ES BUENO
+<!DOCTYPE html>
+<html>
+<title>Zesty N Tasty</title>
+<head>
+<style>
+body {font-family: "Trebuchet", sans-serif;}
+.tablink {
+    background-color: #9999;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+.tablink:hover {
+    background-color: #777;
+}
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+#Home {background-color:red;}
+#Food {background-color:green;}
+#Drink {background-color:pink;}
+#Desserts {background-color:dodgerBlue;}
+#News {background-color:purple;}
+</style>
+</head>
+<body>
+
+<div id="Home" class="tabcontent">
+  <h1>Zesty 'n' Tasty</h1>
+  <p>Eat and Drink Recommendations</p>
+</div>
+
+<div id="Food" class="tabcontent">
+  <h1>Food</h1>
+  <p>10 Restaurants You Need to Eat At Before You Die</p>
+</div>
+
+<div id="Drink" class="tabcontent">
+  <h1>Drink</h1>
+</div>
+
+<div id="Desserts" class="tabcontent">
+  <h1>Desserts</h1>
+  <p>Latest.</p>
+</div>
+    
+<div id="News" class="tabcontent">
+  <h1>Latest News</h1>
+  <p>Latest.</p>
+</div>
+
+<button class="tablink" onclick="openTab('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openTab('Food', this, 'green')">Food</button>
+<button class="tablink" onclick="openTab('Drink', this, 'pink')">Drink</button>
+<button class="tablink" onclick="openTab('Desserts', this, 'dodgerBlue')">Desserts</button>
+<button class="tablink" onclick="openTab('News', this, 'purple')">News</button>
+
+<br>
+<img src="https://static.pexels.com/photos/70497/pexels-photo-70497.jpeg" width="515" height="300">
+    
+<script>
+function openTab(tabName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(tabName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+    
+</script>
+     
+</body>
+</html> 
