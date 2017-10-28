@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Zesty N Tasty</title>
+  
+<head>
+<style>
+body {font-family: "Roboto", sans-serif;}
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 20%;
+}
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
 
+<center><h1 style="font-size:55px;">Zesty 'n' Tasty</h1></center>
+<center><p>Food Recommendations For Your Food Cravings</p></center>
+<br>
+
+<div class="tab">
+  <button class="tablinks" onclick="openLink(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openLink(http://alexisjdubs.github.io/zestyntasty/food.html)">Food</button>
+  <button class="tablinks" onclick="openLink(event, 'Drinks')">Drinks</button>
+  <button class="tablinks" onclick="openLink(event, 'Desserts')">Desserts</button>
+  <button class="tablinks" onclick="openLink(event, 'Locations')">Locations</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Zesty 'n' Tasty is a food recommendation site started by the brilliant entrepeneur, Alexis.</p>
+</div>
+
+<div id="Food" class="tabcontent">
+  <h3 style="font-size:35px;">Food</h3>
+  <h4>50 Restaurants You Need To Eat At Before You Die</h4>
+</div>
+
+<div id="Drinks" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Desserts" class="tabcontent">
+  <h3>Desserts</h3>
+  <p>The next time you go to our nation's capital, have a look at Georgetown Cupcakes.</p>
+</div>
+
+<div id="Locations" class="tabcontent">
+  <h3>Locations</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openLink(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
