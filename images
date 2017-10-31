@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Images</title>
+</head>
+<body>
+
+<!-- This is the link attribute, it is the button that links back to the main page-->
+<a href="index.html">
+  <img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/home-512.png" alt="Exercises Home"
+       style="width:30px;height30px;border:0;">
+</a>
+
+<center><h1>Zesty 'n' Tasty: Images</h1></center>
+  
+<center><p>Here are some images for my Zesty 'N' Tasty Site. Photo creds: The Internet</p></center>
+<br>
+<!--This is a comment about the image attribute-->
+  <img src="https://static1.squarespace.com/static/5685a06669492ea07bb9b05d/t/5702d1922b8ddeaf55815b1f/1459802521539/Angel+Food-+High+Res-6766.jpg?format=1500w" width=500 height=350>
+  <img src="http://dcrealestateguru.com/wp-content/uploads/2016/10/Bonchon-Chicken-TOGO-1024x576.jpg" width=600 height=350>
+  <img src="https://s3-media3.fl.yelpcdn.com/bphoto/xKHWAgyfkO5qUeUsL-2X5A/348s.jpg">
+  <img src="http://ot-foodspotting-production.s3.amazonaws.com/reviews/4066473/thumb_600.jpg?1379795351" alt="Turkey Sub" width=350 height=350>
+  <img src="https://s3-media3.fl.yelpcdn.com/bphoto/oOyfIpwAFdLJha9Amvrc6Q/348s.jpg" alt="Garlic Knots">
+  <img src="https://i2.wp.com/food.theplainjane.com/wp-content/uploads/2017/01/boston-beach-pizza-with-provolone.jpg?fit=1200%2C900&resize=350%2C200" width=485 height=350>
+  <img src="https://i.pinimg.com/originals/85/58/62/855862ea501110dd9328defd3b6a1b24.jpg" alt="Triple Cheese Macaroni" width=380 height=350>
+  <img src="http://www.thelondoneconomic.com/wp-content/uploads/2017/06/The-Duck-Burger-Duck-Waffle-Local.jpg" alt="Duck and Waffle Local" width=550 height=350>
+  <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/2e/f5/52/prezzo-beckenham.jpg" width=425 height=350>
+  <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/40/f7/4a/chou-glace-vanille-et.jpg" width=280 height=350>
+  <img src="http://asianbeat.com/files/ichiran_ramen01.jpg" width=485 height=350>
+  <img src=" http://www.restaurantmagazine.com/wp-content/uploads/2012/10/Krispy-Kreme-Awards-Franchise-Development-Rights-For-Singapore.jpg" width=575 height=350>
+  <img src="http://ot-foodspotting-production.s3.amazonaws.com/reviews/2362553/thumb_600.jpg?1347051926" width=355 height=350>
+  <img src="https://www.georgetowncupcake.com/Assets/img6.jpg" width=720 height=350>
+  <img src="https://www.pepperscale.com/wp-content/uploads/2015/12/Cayenne-Spiced-Eggnog-e1456712810215.jpeg" width=530 height=350>
+  
+</body>
+</html>
