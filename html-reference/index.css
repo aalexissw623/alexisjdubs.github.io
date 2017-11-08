@@ -1,5 +1,5 @@
 body {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 h1 {
@@ -7,7 +7,7 @@ h1 {
 }
 
 #reftablestyle {
-    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
