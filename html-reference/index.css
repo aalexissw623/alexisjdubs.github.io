@@ -1,4 +1,33 @@
 body {
-  font-family: "Trebuchet MS", Arial, Helvetica,
-    sans-serif;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+#reftablestyle {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Makes the table rows and data more visually appealing */
+#reftablestyle td, #reftablestyle th {
+    border: 1px solid #ddd;
+		    padding: 6px;
+}
+
+/* This changes makes the row you are hovering over darker */
+#reftablestyle tr:hover {
+		background-color: #ccc;
+}
+
+/* Color scheme of the table */
+#reftablestyle th {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    background-color: dodgerBlue;
+    color: white;
 }
