@@ -31,3 +31,10 @@ h1 {
     background-color: dodgerBlue;
     color: white;
 }
+
+/* Styles each header */
+.headers {
+	background-color: dodgerBlue;
+	color: white;
+	padding: 8px;
+}
