@@ -8,14 +8,16 @@
   </head>
   <body>
   	
-  	<h1>HTML Reference Page</h1>
+  <!-- Page title with links -->
+  <h1 class="headingOne">HTML Reference Page</h1>
 	<a href=http://alexisjdubs.github.io>Home Page</a>
 	<a href=http://alexisjdubs.github.io/ajwzestytasty1>Zesty 'n' Tasty Page</a>
  	<a href=http://alexisjdubs.github.io/exercises/>HTML Exercises</a>
-  	<a href=http://alexisjdubs.github.io/css-exercises/>CSS Exercises</a>
-  	<a href=http://alexisjdubs.github.io/html-reference/>HTML Reference Page</a>
+  <a href=http://alexisjdubs.github.io/css-exercises/>CSS Exercises</a>
+  <a href=http://alexisjdubs.github.io/html-reference/>HTML Reference Page</a>
+  
 	<br>
-<h2 >Reference Table</h2>
+	<h2>Reference Table</h2>
     <table id="reftablestyle">
       <tr>
         <th>Name</th>
@@ -124,143 +126,232 @@
     </table>
     
 
-	<h2 class="headers">The Essentials of every HTML Page</h2>
+	<h2 class="headers">The Essentials</h2>
 	<p>Every HTML page needs to start with a &lt;!DOCTYPE html&gt;, which specifies the document and tells the page that it is a HTML file. 
-	After, there is the &lt;html&gt; start tag and the &lt;/html&gt; end tag at the end of the HTML document. 
-	In between, there is the &lt;body&gt; which contains the content on the page. 
-		There is a &lt;title&gt;, which represents the title of the page. 
-		Then, you can add more in the body like headings using the &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;.</p>
+		After, there is the &lt;html&gt; start tag at the beginning and the &lt;/html&gt; end tag at the end of the HTML document. In between, there is the &lt;body&gt;, which contains the content on the page. 
+	<br>
+	<br>
+		There is a &lt;title&gt;, which represents and changes the name of the tab. More attributes can be added in the body. These attributes can include headings using the &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;, paragraphs which are defined by &lt;p&gt;, and other means to display information.
+	<br>
+	<br>
+	Text can be styled and referenced using CSS, or Cascading Style Sheets. CSS can be referenced and can be very useful in making the website more visually appealing. The distinguishing factor between HTML and CSS is that HTML is mainly used for content and CSS is used for presentation. CSS can be added inline using &lt;div style&gt;, internally ysing a &lt;style&gt; section still in the HTML, and externalling in a separate CSS file. 
+	When CSS is added internally, all of the HTML is in its own style section. The internal method is better for one HTML page. It is better to add CSS externally, which is referenced using a link to the file in the header section using an &lt;href&gt;, when the website has multiple pages and a style needs to be changed.</p>
+	<a href="https://www.w3schools.com/">W3Schools Home Page</a>
+	<br>
 	<br>
 	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" height="200" width="200">
-	<br>
-	<a href="https://www.w3schools.com/">W3Schools Home Page</a>
 
-	<hr> 
+
+	<br>
 		
 	<h2 id="P1" class="headers">HTML &lt;html&gt;</h2>
+	<h3><b>Description</b></h3>
 	<p>&lt;html&gt; defines the file document and tells the browser it is an HTML file.
 	The tag is the container for all other HTML documents except for the docstring.</p>
-	<p>Syntax: &lt;html&gt;</p>
-	<p>Example: 
+	
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;html&gt;</i>
+	<br>
+	End tag: <i>&lt;/html&gt;</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">
 	&lt;html&gt;
 	&lt;h1&gt;HTML&lt;/h1&gt;
 	&lt;/html&gt;</p>
-	<p>Rendering: None</p>
-	<a href=https://www.w3schools.com/tags/tag_html.asp>HTML Tag</a>
+	<a href=https://www.w3schools.com/tags/tag_html.asp>HTML Document Tag</a>
+
 	<br>
-	<hr>
 
 	<h2 id="P2" class="headers">Header &lt;header&gt;</h2>
+	<h3>Description</h3>
 	<p>The tag for headers is &lt;header&gt;. The header element is a container for all of the headings and other navigational tabs or links.</p>
-	<p>Syntax: &lt;header&gt;</p>
-	<p>Example: 
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;headers&gt;</i>
+	<br>
+	End tag: <i>&lt;/headers&gt;</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">
 	&lt;header&gt;
-	&lt;h1&gt;HTML&lt;/h1&gt;
+	&lt;h2&gt;HTML&lt;/h2&gt;
 	&lt;/header&gt;</p>
-	<p>Rendering: None</p>
 	<a href=https://www.w3schools.com/tags/tag_header.asp>HTML Header</a>
 	<br>
-	<hr>
+
 
 	<h2 id="P3" class="headers">Title &lt;title&gt;</h2>
-	<p>The &lt;title&gt; titles the name of the tab of the document. It provides a title for the page when it gets saved to favorites.</p>
-	<p>Syntax: &lt;title&gt;</p>
-	<p>Example: 
-	&lt;title&gt;HTML Reference Title&lt;/title&gt;
-	<p>Rendering: Writes the title in the tab</p>
+	<h3>Description</h3>
+	<p>The &lt;title&gt; titles the name of the tab of the document and webpage. It also provides a title for the page when it gets saved to favorites, is bookmarked, or is displayed in history.</p>
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;title&gt;</i>
+	<br>
+	End tag: <i>&lt;/title&gt;</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">
+	&lt;title&gt;HTML Reference Title&lt;/title&gt;</p>
 	<a href=https://www.w3schools.com/tags/tag_title.asp>HTML Title</a>
 	<br>
-	<hr>
 
 	<h2 id="P4" class="headers">Body &lt;body&gt;</h2>
+	<h3>Description</h3>
 	<p>The &lt;body&gt; defines the body of the document, which includes text, images, hyperlinks, lists, and tables.</p>
-	<p>Syntax: &lt;body&gt;</p>
-	<p>Example: 
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;body&gt;</i>
+	<br>
+	End tag: <i>&lt;/body&gt;</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">
 	&lt;body&gt;The text goes in the body.&lt;/body&gt;
-	<p>Rendering: This is text in the body</p>
+	<h3>Rendering</h3>
+	<p id="exampleBack">The text goes in the body.</p>
 	<a href=https://www.w3schools.com/tags/tag_body.asp>HTML Body</a>
 	<br>
-	<hr>
 
 	<h2 id="P5" class="headers">Headings &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;</h2>
+	<h3>Description</h3>
 	<p>There are six heading sizes with &lt;h1&gt; being the largest and &lt;h6&gt;.
-	<p>Syntax: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;.</p>
-	<p>Example: &lt;h1&gt;This is a heading.&lt;/h1&gt;</p>
-	<p>Rendering: </p><h1>This is a heading.</h1>
+	<h3>Syntax</h3> 
+	<p>Start tag:<i>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</i>
+	<br>
+	End tag: <i>&lt;/h1&gt;, &lt;/h2&gt;, &lt;/h3&gt;, &lt;/h4&gt;, &lt;/h5&gt;, &lt;/h6&gt;</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">&lt;h1&gt;This is a heading.&lt;/h1&gt;</p>
+	
+	<h3>Rendering</h3>
+	<div id="exampleBack">
+		<h1>This is the heading &lt;h1&gt;.</h1>
+		<h3>This is the heading &lt;h3&gt;.</h3>
+		<h6>This is the heading &lt;h6&gt;.</h6>
+	</div>
+	<br>
 	<a href=https://www.w3schools.com/tags/tag_hn.asp>HTML Headings</a>
 	<br>
-	<hr>
 		
 	<h2 id="P6" class="headers">Paragraph &lt;p&gt;</h2>
-	<p>A paragraph is specified by &lt;p&gt;. There is a default margin that is added in front of &lt;p&gt; by browsers.</p>
-	<p>Syntax: &lt;p&gt;(Add text here)&lt;/p&gt;</p>
-	<p>Example: &lt;p&gt;This is an example.&lt;/p&gt;</p>
-	<p>Rendering: This is a paragraph.</p>
+	<h3>Description</h3>
+	<p>A paragraph is specified by &lt;p&gt;. There is a default margin that is added in front of &lt;p&gt; by browsers.
+	In paragraphs, the browser will automatically strip any extra spaces and extra lines when the page is displayed. Furthermore, different sized screens and windows will create different results.</p>
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;p&gt;</i>
+	<br>
+	End tag: <i>&lt;/p&gt;</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">&lt;p&gt;This is an example.&lt;/p&gt;</p>
+	<h3>Rendering</h3>
+	<p id="exampleBack">This is a paragraph.</p>
 	<a href=https://www.w3schools.com/tags/tag_p.asp>HTML Paragraphs</a>
 	<br>
-	<hr>
-		
+	
+	
 	<h2 id="P7" class="headers">Breaks &lt;br&gt;</h2>
+	<h3>Description</h3>
 	<p>Breaks are used to separate paragraphs, headers, or any blocks of text from each other, or moves the text onto the next line.</p>
-	<p>Syntax: &lt;br&gt;</p>
-	<p>Example: &lt;p&gt;Here is some text.
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;br&gt;</i>
+	<br>
+	End tag: <i>None</i>
+	</p>
+	<h3>Rendering</h3>
+	<p id="exampleBack">&lt;p&gt;Here is some text.
 	&lt;br&gt;
 	Here is more text.&lt;/p&gt;</p>
-	<p>Rendering: Here is some text. <br> Here is more text.</p>
+	<h3>Rendering</h3>
+	<p id="exampleBack">Here is some text. <br> Here is more text. <br> The break brings the paragraph onto a new line.</p>
 	<a href=https://www.w3schools.com/tags/tag_br.asp>HTML Breaks</a>
 	<br>
-	<hr>
+
 		
 	<h2 id="P8" class="headers">Lines &lt;hr&gt;</h2>
+	<h3>Description</h3>
 	<p>The tag &lt;line&gt; is used to draw a line to separate text to make it more visually appeaing. Lines are used to define a thematic change in the content.</p>
-	<p>Syntax: &lt;hr&gt;</p>
-	<p>Example: Here is some text.
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;hr&gt;</i>
+	<br>
+	End tag: <i>None</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">Here is some text.
 	&lt;hr&gt;
 	Here is more text.</p>
-	<p>Rendering: Here is some text.</p> <hr> <p>Here is more text.</p>
+	<h3>Rendering</h3>
+	<div id="exampleBack">
+	Here is some text.
+	<hr>
+	Here is more text.
+	</div>
+	<br>
 	<a href=https://www.w3schools.com/tags/tag_hr.asp>HTML Lines</a>
 	<br>
-	<hr>
 		
 	<h2 id="P9" class="headers">Comments &lt;!-- --&gt;</h2>
+	<h3>Description</h3>
 	<p>Comments are used in text to inform the reader or remind yourself about your code. 
 		Comments are not written and do not get displayed in the browser. 
 		Comments can be especially useful if there is a lot of code.</p>
-	<p>Syntax: &lt;!-- --&gt;</p>
-	<p>Example: &lt;!--This is a comment about a comment in my code.--&gt;</p>
-	<p>Rendering: None, because they are not displayed in the browser.</p>
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;!--</i>
+	<br>
+	End tag: <i>--&gt;</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">&lt;!--This is a comment about a comment in my code.--&gt;</p>
+	<h3>Rendering</h3>
+	<p id="exampleBack">None, comments are not displayed in the browser.</p>
 	<a href=https://www.w3schools.com/tags/tag_comment.asp>HTML Comments</a>
 	<br>
-	<hr>
 
 	<h2 id="P10" class="headers">Links &lt;a&gt;</h2>
+	<h3>Description</h3>
 	<p>Links, or hyperlinks, are defined by &lt;a&gt;. They link from one webpage to another, so the href attribute is very important.
 		The href attribute is essential because it indicates the destination of the link.</p>
-	<p>Syntax: &lt;a&gt;</p>
-	<p>Example: &lt;a href="https://www.w3schools.com"&gt;This is a link to the w3schools page.&lt;/a&gt;</p>
-	<p>Rendering: <a href="https://www.w3schools.com">W3Schools Link</a></p>
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;a&gt;</i>
+	<br>
+	End tag: <i>&lt;/a&gt;</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">&lt;a href="https://www.w3schools.com"&gt;This is a link to the w3schools page.&lt;/a&gt;</p>
+	<h3>Rendering</h3>
+	<p id="exampleBack"><a href="https://www.w3schools.com">W3Schools Link</a></p>
 	<br>
 	<a href="https://www.w3schools.com/tags/tag_a.asp">HTML Links</a>
 	<br>
-	<hr>
 		
 	<h2 id="P11" class="headers">Images &lt;img&gt;</h2>
+	<h3>Description</h3>
 	<p>Images are defined by &lt;img&gt;, and have two important attributes: img and src.</p>
-	<p>Syntax: &lt;img&gt;</p>
-	<p>Example: &lt;img src="https://www.w3schools.com/css/img_fjords.jpg"&gt;</p>
-	<p>Rendering: </p>
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;img&gt;</i>
+	<br>
+	End tag: <i>None</i>
+	</p>
+	<h3>Example</h3>
+	<p id="exampleBack">&lt;img src="https://www.w3schools.com/css/img_fjords.jpg"&gt;</p>
+	<h3>Rendering</h3>
+	<div id="exampleBack">
 	<img src="https://cdn.thinglink.me/api/image/741323912217886722/1240/10/scaletowidth" height="160" width="175">
+	</div>
 	<br>
 	<a href="https://www.w3schools.com/tags/tag_img.asp">HTML Images</a>
 	<br>
-	<hr>
 		
 	<h2 id="P12" class="headers">Lists &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</h2>
+	<h3>Description</h3>
 	<p>Lists can be very used to display brief and concise information.
 		Lists may be unordered or ordered. Unordered lists can be bulleted, circles, squares, or have nothing. 
 		Ordered lists can be numbers, uppercase letters and lowercase letters, and uppercase and lowercase Roman Numerals.</p>
-	<p>Syntax: &lt;ul&gt; (unordered list), &lt;ol&gt; (ordered list), &lt;li&gt; (list items)</p>
-	<p>Example: 
+	<h3>Syntax</h3>
+	<p>Start tag:<i>&lt;ul&gt; (unordered list), &lt;ol&gt; (ordered list), &lt;li&gt; (list items)</i>
+	<br>
+	End tag: <i>&lt;/ul&gt;, &lt;/ol&gt;, &lt;/li&gt;</i>
+	</p>
+	
+	<p> 
 		<br>
 		&lt;ul&gt;
 		<br>
@@ -275,33 +366,34 @@
 	<br>
 	Here are unordered lists.
 	<ul>
- 	  <li>Coffee</li>
- 	  <li>Tea</li>
-  	  <li>Milk</li>
+ 	  <li>Daisy</li>
+ 	  <li>Tulip</li>
+  	<li>Rose</li>
 	</ul>  
 	<ul style="list-style-type:circle">
- 	  <li>Coffee</li>
- 	  <li>Tea</li>
-  	  <li>Milk</li>
+ 	  <li>Iron Man</li>
+ 	  <li>Captain America</li>
+  	<li>Thor</li>
 	</ul> 
 	Here are ordered lists.
 	<ol type="1">
-  	  <li>Coffee</li>
- 	  <li>Tea</li>
- 	  <li>Milk</li>
+  	<li>Daisy</li>
+ 	  <li>Tulip</li>
+ 	  <li>Rose</li>
 	</ol>
 	<ol type="A">
- 	  <li>Coffee</li>
-  	  <li>Tea</li>
- 	  <li>Milk</li>
+ 	  <li>Iron Man</li>
+  	<li>Captain America</li>
+ 	  <li>Thor</li>
 	</ol> 
 	<a href="https://www.w3schools.com/html/html_lists.asp">HTML Lists</a>
 	<br>
-	<hr>
 		
 	<h2 id="P13" class="headers">Tables &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</h2>
+	<h3>Description</h3>
 	<p>Tables are defined by &lt;table&gt;, and are very important in displaying data in a chart or table.</p>
-	<p>Syntax: &lt;table&gt; (table), &lt;tr&gt; (table row), &lt;th&gt; (table header), &lt;td&gt; (table data)</p>
+	<h3>Syntax</h3>
+	<p>&lt;table&gt; (table), &lt;tr&gt; (table row), &lt;th&gt; (table header), &lt;td&gt; (table data)</p>
 	<p>Rendering: 
 	<table>
   	<tr>
@@ -327,16 +419,17 @@
 	</table>
 	<a href="https://www.w3schools.com/html/html_tables.asp">HTML Tables</a>
 	<br>
-	<hr>
 		
 	<h2 id="P14" class="headers">Blocks &lt;div&gt;</h2>
+	<h3>Description</h3>
 	<p>Blocks are the default display value for most elements which are declared using &lt;div&gt;.
     		A block-level element always starts on a new line and takes up the full width of the screen.
 		The &lt;div&gt; is a block-level element and starts on a new line, 
 		but the &lt;span&gt; element is an inline element, so it will not start on a new line.
        		The &lt;div&gt; element is often used as a container for other HTML elements, while the &lt;span&gt; element is used for text.
        		Both elements have no required attributes, but both style and class are common.</p>
-	<p>Syntax: &lt;div&gt; (block-level elements), &lt;span&gt; (inline elements)</p>
+  <h3>Syntax</h3>
+	<p>&lt;div&gt; (block-level elements), &lt;span&gt; (inline elements)</p>
 	<p>Example: &lt;div&gt;Hello world&lt;/div&gt;</p>
   <p>Rendering (block-level elements):
 		<div>Hello</div>
@@ -345,7 +438,7 @@
   <p>Rendering (inline elements):
 		<br>
 		<span>Hello</span>
-    		<span>World</span>
+    <span>World</span>
 	</p>
 
 	<a href="https://www.w3schools.com/html/html_blocks.asp">HTML Blocks</a>
