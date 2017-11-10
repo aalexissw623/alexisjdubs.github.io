@@ -1,5 +1,6 @@
-h1 {
+.headingOne {
 	text-align: center;
+	font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
@@ -37,5 +38,16 @@ body {
 .headers {
 	background-color: dodgerBlue;
 	color: white;
-	padding: 8px;
+	padding: 10px;
+}
+
+h3 {
+	font-family: Arial;
+}
+
+/* Gives a nice separation and background to the examples */
+#exampleBack {
+    border-left: 6px solid dodgerblue;
+    background-color: rgb(230, 243, 255);
+		padding: 14px;
 }
