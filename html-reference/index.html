@@ -9,7 +9,7 @@
   <body>
   	
   <!-- Page title with links -->
-  <h1 class="headingOne">HTML Reference Page</h1>
+  <h1 class="headingOne" id="P0">HTML Reference Page</h1>
 	<a href=http://alexisjdubs.github.io>Home Page</a>
 	<a href=http://alexisjdubs.github.io/ajwzestytasty1>Zesty 'n' Tasty Page</a>
  	<a href=http://alexisjdubs.github.io/exercises/>HTML Exercises</a>
@@ -350,21 +350,19 @@
 	<br>
 	End tag: <i>&lt;/ul&gt;, &lt;/ol&gt;, &lt;/li&gt;</i>
 	</p>
-	
-	<p> 
-	<br>
-	&lt;ul&gt;
-	<br>
+	<h3>Example</h3>
+	<p id="exampleBack"> 
+		&lt;ul&gt;
+		<br>
  	  &lt;li&gt;Daisy&lt;/li&gt;
-	<br>
+		<br>
 	  &lt;li&gt;Tulip&lt;/li&gt;
-	<br>
+		<br>
  	  &lt;li&gt;Rose&lt;/li&gt;
-	<br>
-	 &lt;/ul&gt; 
-	</p>
-	<p>Rendering: 
-	<br>
+		<br>
+	  &lt;/ul&gt; </p>
+	<h3>Rendering</h3>
+	<div id="exampleBack">
 	Here are unordered lists.
 	<ul>
  	  <li>Daisy</li>
@@ -387,6 +385,8 @@
   	<li>Captain America</li>
  	  <li>Thor</li>
 	</ol> 
+	</div>
+	<br>
 	<a href="https://www.w3schools.com/html/html_lists.asp">HTML Lists</a>
 	<br>
 		
@@ -394,30 +394,59 @@
 	<h3>Description</h3>
 	<p>Tables are defined by &lt;table&gt;, and are very important in displaying data in a chart or table.</p>
 	<h3>Syntax</h3>
-	<p>&lt;table&gt; (table), &lt;tr&gt; (table row), &lt;th&gt; (table header), &lt;td&gt; (table data)</p>
-	<p>Rendering: 
+	<p>Start tag:<i>&lt;table&gt; (table), &lt;tr&gt; (table row), &lt;th&gt; (table header), &lt;td&gt; (table data)</i>
+	<br>
+	End tag: <i>&lt;/table&gt;, &lt;/tr&gt;, &lt;/th&gt;, &lt;/td&gt;</i>
+	</p>
+	
+	<h3>Example</h3>
+	<div id="exampleBack">
+	&lt;table&gt;
+	<br>
+  	&lt;tr&gt;
+  	<br>
+   	 &lt;th&gt;Candy Type&lt;/th&gt;
+   	 <br>
+   	 &lt;th&gt;Sugar&lt;/th&gt;
+   	 <br>
+   	 &lt;th&gt;Calories&lt;/th&gt;
+   	 <br>
+  	 &lt;/tr&gt;
+  	 <br>
+ 	   &lt;tr&gt;
+ 	   <br>
+ 	   &lt;td&gt;Sour Patch&lt;/td&gt;
+ 	   <br>
+  	 &lt;td&gt;28 &lt;/td&gt;
+  	 <br>
+	   &lt;td&gt;140&lt;/td&gt;
+	   <br>
+  	 &lt;/tr&gt;
+  	 <br>
+  	 &lt;/table&gt;
+	</div>
+	
+	<h3>Rendering</h3>
+	<div id="exampleBack"> 
 	<table>
   	<tr>
    	 <th>Candy Type</th>
    	 <th>Sugar</th>
    	 <th>Calories</th>
-  	</tr>
-  	<tr>
- 	   <td>Skittles Bag</td>
-  	   <td>8 g</td>
-  	   <td>153</td>
-  	</tr>
+  	 </tr>
  	   <tr>
  	   <td>Sour Patch</td>
-  	   <td>28 g</td>
-	<td>140</td>
-  	</tr>
-  	<tr>
+  	 <td>28 g</td>
+	   <td>140</td>
+  	 </tr>
+  	 <tr>
    	 <td>Candy Corn</td>
    	 <td>32 g</td>
    	 <td>160</td>
-  	</tr>
+  </tr>
 	</table>
+	</div>
+	<br>
 	<a href="https://www.w3schools.com/html/html_tables.asp">HTML Tables</a>
 	<br>
 		
@@ -430,20 +459,42 @@
        		The &lt;div&gt; element is often used as a container for other HTML elements, while the &lt;span&gt; element is used for text.
        		Both elements have no required attributes, but both style and class are common.</p>
   <h3>Syntax</h3>
-	<p>&lt;div&gt; (block-level elements), &lt;span&gt; (inline elements)</p>
-	<p>Example: &lt;div&gt;Hello world&lt;/div&gt;</p>
-  <p>Rendering (block-level elements):
+  <p>Start tag:<i>&lt;div&gt; (block-level elements), &lt;span&gt; (inline elements)</i>
+	<br>
+	End tag: <i>&lt;/div&gt;, &lt;/span&gt;</i>
+	</p>
+	<h3>Example</h3>
+	
+	<p id="exampleBack">
+		&lt;div&gt;Hello world&lt;/div&gt;
+		<br>
+		&lt;span&gt;Hello world&lt;/span&gt;
+		</p>
+		
+	<h3>Rendering</h3>
+	<div id="exampleBack">
+		Block-level elements:
 		<div>Hello</div>
     <div>World</div>
-
-  <p>Rendering (inline elements):
-		<br>
-		<span>Hello</span>
+    <br>
+    Inline elements:
+    <br>
+    <span>Hello</span>
     <span>World</span>
-	</p>
-
+  </div>
+	<br>
 	<a href="https://www.w3schools.com/html/html_blocks.asp">HTML Blocks</a>
 	<br>
+	<br>
 	
+	<!--Creates a footer to write my name and sources -->
+  <hr>
+	<footer>
+  	<p>Website by: Alexis Wu</p>
+  	<p>Sources: <a href="W3Schools.com">W3Schools</a></p>
+  	<a href="#P0">Back To Top</a>
+	</footer>
+
   </body>
+
 </html>
