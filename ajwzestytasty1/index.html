@@ -1,52 +1,47 @@
 <!DOCTYPE html>
-
-<html>
-<title>Zesty N Tasty</title>
+<html lang="en">
 <head>
-<style>
-body {font-family: "Roboto", sans-serif;}
- 
-body {margin:0;}
-.topnav {
- overflow: hidden;
- background-color: #333;
-}
-.topnav a {
- float: left;
- display: block;
- color: #f2f2f2;
- padding: 16px;
- text-align: center;
- text-decoration: none;
- font-size: 17px;
- width: 17%;
-}
-.topnav a:hover {
- background-color: #ddd;
- color: black;
-}
-.topnav a.active {
-   background-color: rgb(200,140,80);
-   color: white;
-}
-</style>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 <body>
+	
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 
-<div style="padding-left:16px">
- <center><h1>Zesty 'n' Tasty</h2></center>
- <p><center>Food Recommendations For Your Food Cravings</center></p>
+<div>
+  <h1 class="header">Z.N.T</h1>
+  <p class="headerp">Resize the browser window to see the responsive effect.</p>
 </div>
- 
-<br>
+
 <div class="topnav">
- <a class="active" href="https://alexisjdubs.github.io/ajwzestytasty1/">Home</a>
- <a href="https://alexisjdubs.github.io/ajwzestytasty1/food.html">Food</a>
- <a href="https://alexisjdubs.github.io/ajwzestytasty1/desserts.html">Desserts</a>
- <a href="https://alexisjdubs.github.io/ajwzestytasty1/beverages.html">Beverages</a>
- <a href="https://alexisjdubs.github.io/ajwzestytasty1/recipes.html">Recipes</a>
+  <a id="activepage" href="index.html">Home</a>
+  <a href="food.html">Food</a>
+  <a href="desserts.html">Desserts</a>
+  <a href="beverages.html">Beverages</a>
+  <a href="other.html">Other Links</a>
 </div>
-<br>
- <p><center>Zesty 'n' Tasty is a food recommendation site created by Alexis.</center></p>
+
+<div class="row">
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+  
 </body>
 </html>
