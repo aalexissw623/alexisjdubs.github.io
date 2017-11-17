@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html>
-<title>About ZNT</title>
-  
+<html lang="en">
 <head>
-<a href="index.html">
-  <img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/home-512.png" alt="ZNT Home"
-       style="width:30px;height30px;border:0;">
-</a>
-  
-<style>
-body {font-family: "Roboto", sans-serif;}
-/* Style the tab */
-div.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-</style>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 <body>
 
-<center><h1 style="font-size:55px;">About</h1></center>
-<center><p>[Insert Information]</p></center>
-<br>
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 
-  <p>[Insert information</p>
+<div>
+  <h1 class="header">Other Links</h1>
+  <p class="headerp">Videos and External Links</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="food.html">Food</a>
+  <a href="desserts.html">Desserts</a>
+  <a href="beverages.html">Beverages</a>
+  <a id="activepage" href="other.html">Other Links</a>
+</div>
+
+<!-- Here are some videos and external links to other sites that I like -->
+<div class="row">
+  <div class="plain main">
+  	<h2>Videos</h2>
+  	<p>Here are some videos of my favorite recipes.</p>
+  	<div class="videoback">
+			<center>
+			<iframe width="300px" height="150px" src="https://www.youtube.com/watch?v=HOAk9wfZoko" frameborder="2" allowfullscreen></iframe>
+			<iframe width="300px" height="150px" src="https://www.youtube.com/watch?v=IX_zU4TDIS0" frameborder="2" allowfullscreen></iframe>
+			<iframe width="300px" height="150px" src="https://www.youtube.com/watch?v=igkltgvKSh8" frameborder="2" allowfullscreen></iframe>
+			</center>
+			<br>
+		</div>
+    <h2>Other Links</h2>
+    <p>Enjoy a few links for additional food browsing, or if you would like to check out some HTML!</p>
+    <h2>Food Links</h2>
+    <a href="https://tasty.co/">Buzz Feed Tasty</a>
+    <br>
+    <a href="http://www.foodnetwork.com/">Food Network</a>
+    <br>
+    <a href="http://www.delish.com/">Delish.com</a>
+    <br>
+    <h2>HTML Links</h2>
+    <a href="https://alexisjdubs.github.io/exercises/">HTML Exercises</a>
+    <br>
+		<a href="https://alexisjdubs.github.io/html-reference/">HTML Reference Page</a>
+  </div>
+</div>
+
+<br>
+<div class="footer">
+	<p>Zesty 'n' Tasty, San Diego, CA<br>By Alexis Wu<br>
+  Contact me at: goodfoodis4life@gmail.com </p>
+</div>
+  
 </body>
-</html> 
+</html>
