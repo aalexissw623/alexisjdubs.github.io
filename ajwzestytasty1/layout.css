@@ -67,8 +67,10 @@ body {
 
 /* Styles for text without other containers or columns */
 .plain.main {
-		margin: 20px;
-		padding: 30px;
+		margin: 50px;
+		padding-left: 30px;
+		padding-top: 10px;
+		padding-right: 30px;
 		text-align: justify;
 }
 
@@ -81,10 +83,16 @@ body {
     text-align: justify;
 }
 
-.quoteColor {
+.quoteColorHome {
 	font-family: "Amatic SC";
-	font-size: 32px;
-	color: grey;
+	font-size: 35px;
+	color: dodgerBlue;
+}
+
+.quoteStyle {
+	font-family: "Amatic SC";
+	font-size: 50px;
+	color: dodgerBlue;
 }
 
 .videoback {
@@ -120,5 +128,27 @@ body {
 }
 
 hr {
-	color: dodgerBlue;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid dodgerBlue;
+    margin: 2em 0;
+    padding: 0; 
+}
+
+/* Table styling */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
