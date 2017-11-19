@@ -14,7 +14,7 @@
 }
 
 /* Style the topnav links */
-.topnav a {
+.topnav {
     float: left;
     display: block;
     background-color: #d2d2d2;
