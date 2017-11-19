@@ -28,3 +28,9 @@
 #activepage {
     background-color: dodgerBlue;
 }
+
+/* Gives the body a font and margin */
+body {
+  margin: 40px;
+  font-family: "Didact Gothic";
+}
