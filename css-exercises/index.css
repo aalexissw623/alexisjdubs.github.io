@@ -1,0 +1,30 @@
+/* Style the header */
+.header {
+    padding-top: 25px;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 50px;
+}
+
+.headerp {
+	text-align: center;
+	padding-bottom: 25px;
+	color: #b2b2b2;
+	font-size: 17px;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 20%;
+}
+
+/* indicate active page on nav */
+#activepage {
+    background-color: dodgerBlue;
+}
