@@ -18,11 +18,11 @@
     float: left;
     display: block;
     background-color: #d2d2d2;
-    color: green;
+    color: black;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
-    width: 15%;
+    width: 18%;
 }
 
 /* indicate active page on nav */
