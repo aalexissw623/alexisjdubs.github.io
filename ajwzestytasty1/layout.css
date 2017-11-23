@@ -164,5 +164,7 @@ tr:nth-child(even) {
 #infoBack {
     border-left: 6px solid dodgerblue;
     background-color: rgb(230, 243, 255);
-		padding: 14px;
+    padding: 16px 16px 16px;
+    margin: 20px 0;
+    width: 40%;
 }
