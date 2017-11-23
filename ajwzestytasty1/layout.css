@@ -74,6 +74,14 @@ body {
 		text-align: justify;
 }
 
+.recipes.main {
+		margin: 90px;
+		padding-left: 30px;
+		padding-top: 10px;
+		padding-right: 30px;
+		text-align: justify;
+}
+
 /* Main columns for pages with another column */
 .column.main {
     width: 70%;
