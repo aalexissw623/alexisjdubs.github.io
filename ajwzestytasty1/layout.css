@@ -152,3 +152,9 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+#infoBack {
+    border-left: 6px solid dodgerblue;
+    background-color: rgb(230, 243, 255);
+		padding: 14px;
+}
