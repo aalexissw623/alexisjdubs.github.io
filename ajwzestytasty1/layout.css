@@ -67,10 +67,10 @@ body {
 
 /* Styles for text without other containers or columns */
 .plain.main {
-		margin: 70px;
-		padding-left: 30px;
+		margin: 80px;
+		padding-left: 40px;
 		padding-top: 10px;
-		padding-right: 30px;
+		padding-right: 40px;
 		text-align: justify;
 }
 
